@@ -37,7 +37,6 @@
     <None Include="package.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
     <Content Include="js\main.js" />
   </ItemGroup>
   <ItemGroup>
