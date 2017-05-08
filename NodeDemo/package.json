@@ -4,7 +4,7 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "start": "http-server"
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -13,6 +13,7 @@
     "http-server": "^0.10.0",
     "jshint": "^2.9.4",
     "jshint-loader": "^0.8.4",
+    "strip-loader": "^0.1.2",
     "webpack": "^2.5.0",
     "webpack-dev-server": "^2.4.5"
   }

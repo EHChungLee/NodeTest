@@ -14,12 +14,12 @@ module.exports = {
     },
     module: {
         rules: [ /* Loaders and PreLoaders are now deprecated in v2 */
-            {
-                test: /\.js$/,
-                enforce: "pre",   /* for preloaders */
-                exclude: /node_modules/,
-                loader: "jshint-loader"
-            },
+            //{
+            //    test: /\.js$/,
+            //    enforce: "pre",   /* for preloaders */
+            //    exclude: /node_modules/,
+            //    loader: "jshint-loader"
+            //},
             {
                 /* test: /\.jsx?$/, */
                 test: /\.es6$/,

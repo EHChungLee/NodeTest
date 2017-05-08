@@ -63,27 +63,44 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-console.log('section 1 is now loaded ...');
+"use strict";
+
+
+var login = function login(username, password) {
+	if (username !== 'admin' || password !== 'radical') {
+		console.log('incorrect login encountered!');
+	}
+};
+
+login('admin', 'idunno');
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+﻿console.log('section 1 is now loaded ...');
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function () {
+﻿(function () {
 
+    __webpack_require__(1);
     __webpack_require__(0);
-    __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./login\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
+    //document.write("testing jshint bs");
     console.log('testing Node and WebPack begins.');
     $('#sampleTest').text('working extra hard from webpack watch mode!!');
-    $('#sampleTest2').text('watch mode on baby and we have require.');
+    $('#sampleTest2').text('watch mode onand we have require. Sample code completed');
+
+    
 })();
 
 /***/ })
