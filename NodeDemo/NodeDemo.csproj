@@ -33,15 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include=".babelrc" />
+    <None Include=".jshintrc" />
     <None Include="App.config" />
     <None Include="package.json" />
+    <None Include="script\login.es6" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="js\main.js" />
+    <Content Include="css\main.css" />
+    <Content Include="node_modules\main.css" />
+    <Content Include="script\main.js" />
+    <Content Include="script\section1.js" />
+    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="css\" />
-    <Folder Include="js\jquery\" />
+    <Folder Include="script\bundles\" />
+    <Folder Include="script\jquery\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
