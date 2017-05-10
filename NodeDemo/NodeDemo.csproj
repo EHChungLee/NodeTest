@@ -37,12 +37,16 @@
     <None Include=".bu_jshintrc" />
     <None Include="App.config" />
     <None Include="package.json" />
-    <None Include="script\login.es6" />
+    <None Include="script\login.jsx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\main.css" />
     <Content Include="node_modules\main.css" />
-    <Content Include="script\main.js" />
+    <None Include="script\main.es6" />
+    <Content Include="public\about.html" />
+    <Content Include="public\contact.html" />
+    <Content Include="script\AboutPage.js" />
+    <Content Include="script\contactPage.js" />
     <Content Include="script\section1.js" />
     <Content Include="webpack-production.config.js" />
     <Content Include="webpack.config.js" />
@@ -52,7 +56,7 @@
     <Folder Include="script\jquery\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
+    <Content Include="public\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

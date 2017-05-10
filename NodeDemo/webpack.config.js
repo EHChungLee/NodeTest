@@ -1,14 +1,24 @@
 ﻿"use strict";
 
+var path = require('path');   /* this is build into node */
+
+/* for multi bundle */
+var webpack = require('webpack');
+var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('shared.js');
+
+
 module.exports = {
-    entry: "./script/main.js",
+    context: path.resolve('script'),
+    entry: "./main",
     output: {
-        filename: "./script/bundles/bundle.js"
+        path: path.resolve('build/js/'),
+        publicPath: '/public/assets/js',
+        filename: "./bundle.js"
     },
     watch: true,   /* added to start with watch mode */
 
     devServer: {
-        contentBase: ".",
+        contentBase: "public",     /* default option ".", */
         host: "localhost",
         port: 9000
     },
@@ -20,9 +30,8 @@ module.exports = {
             //    exclude: /node_modules/,
             //    loader: "jshint-loader"
             //},
-            {
-                /* test: /\.jsx?$/, */
-                test: /\.es6$/,
+            {                
+                test: [/\.es6$/,/\.jsx?$/],
                 exclude: /node_modules/,
                 loader: "babel-loader"
             }
@@ -30,7 +39,7 @@ module.exports = {
     },
     /* to auto look without the extenstions in require files */
     resolve: {
-        extensions: ['*', '.js', '.es6']  /* default is '', '.js' */
+        extensions: ['*', '.js', '.es6', '.jsx']  /* default is '*', '.js' */
     }
     
 };
