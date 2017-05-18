@@ -36,25 +36,29 @@
     <None Include=".babelrc" />
     <None Include=".bu_jshintrc" />
     <None Include="App.config" />
+    <None Include="css\app.less" />
+    <None Include="fonts\Lora-Bold.ttf" />
+    <None Include="fonts\Lora-BoldItalic.ttf" />
+    <None Include="fonts\Lora-Italic.ttf" />
+    <None Include="fonts\Lora-Regular.ttf" />
     <None Include="package.json" />
     <None Include="script\login.jsx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\main.css" />
+    <None Include="css\main.scss" />
+    <Content Include="images\webpack_logo.png" />
     <Content Include="node_modules\main.css" />
     <None Include="script\main.es6" />
     <Content Include="public\about.html" />
     <Content Include="public\contact.html" />
-    <Content Include="script\AboutPage.js" />
+    <Content Include="script\aboutPage.js" />
     <Content Include="script\contactPage.js" />
+    <Content Include="script\homePage.js" />
     <Content Include="script\section1.js" />
     <Content Include="webpack-production.config.js" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="script\bundles\" />
-    <Folder Include="script\jquery\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="public\index.html" />
   </ItemGroup>
